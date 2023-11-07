@@ -1,92 +1,162 @@
-    a {
-        text-decoration: none;
-    }
-    
-    .header__top {
-        margin-left: 360px;
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    /* margin-left: 360px;
         margin-right: 360px;
         margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    
-    a.header__menu {
-        color: #000;
-        font-family: Gilroy-Medium;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    a.header__menu:hover {
-        color: #F25822;
-        font-family: Gilroy-Medium;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    div.main__content {
-        margin-left: 373px;
-        margin-top: 50px;
-    }
-    
-    h1.main__content {
-        color: #000;
-        font-family: Gilroy-Bold;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    p.main__content {
-        color: #888;
-        font-family: Gilroy-Medium;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    button.buttons {
-        width: 140px;
-        height: 50px;
-        flex-shrink: 0;
-        border-radius: 50px;
-        background: #F25822;
-        box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
-    }
-    
-    span.buttons {
-        color: #FFF;
-        font-family: Gilroy-Bold;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    a.main__link {
-        color: #AAA;
-        font-family: Gilroy-Bold;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-    div.bottom__links {
-        margin-left: 331px;
+        margin-bottom: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 15px; */
+    margin-top: 30px;
+}
+
+div.header__menu {
+    display: flex;
+    gap: 25px;
+}
+
+a.header__menu {
+    color: #000;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a.header__menu:hover {
+    color: #F25822;
+    font-family: Gilroy-Medium;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.main__content {
+    /* margin-left: 373px;
+        margin-top: 50px; */
+}
+
+.main {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    /* margin-top: 15px; */
+}
+
+.content {
+    margin-left: 13px;
+    margin-top: 51px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+h1.main__content {
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 522px;
+    margin: 0px;
+}
+
+p.main__content {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 466px;
+    margin: 0px;
+}
+
+div.main_buttons {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 72px;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+button.buttons {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+
+span.buttons {
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a.main__link {
+    color: #AAA;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.bottom__links {
+    /* margin-left: 331px;
         margin-right: 331px;
         margin-top: 83px;
-        margin-bottom: 83px;
-    }
-    
-    img.bottom__images {
-        width: 160px;
-        height: 50px;
-        flex-shrink: 0;
-        padding: 14px;
-    }
+        margin-bottom: 83px; */
+}
+
+img.bottom__images {
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+    padding: 14px;
+}

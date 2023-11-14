@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
-    
+.center {
+    /* width: 60%; */
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
 }
 
 .top__nav__container {
-    width: 926px;
+    /* width: 60%; */
     margin: 0 auto;    
     display: flex; 
     justify-content: space-between;
@@ -77,6 +79,10 @@ body {
     color: #5D5D5D;
 }
 
+
+.color6 {
+    color: #9F9F9F;
+}
 .lato {
     font-family: Lato;
     font-style: normal;
@@ -92,6 +98,10 @@ body {
 }
 
 .thin {
+    font-weight: 400;
+}
+
+.thin300 {
     font-weight: 400;
 }
 
@@ -235,12 +245,12 @@ body {
 }
 
 .central__block__mosaic_text {
-display: flex;
-padding: 24px 16px;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-gap: 16px;
+    display: flex;
+    padding: 24px 16px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .bottom_button_container {
@@ -258,4 +268,54 @@ gap: 16px;
     height: 48px;
     flex-shrink: 0;
     border: 1px solid #FF6A6A;
+}
+
+@media (max-width: 768px) {
+
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .header img {
+        width: 386px;
+        gap: 39px;
+        /* height: 368px; */
+    }
+
+    .font__big {
+        font-size: 44px;
+    }
+
+    .font__medium {
+        font-size: 24px;
+    }
+
+    .mosaic__block {
+        gap: 20px;
+        /* display: grid; */
+        grid-template-columns: repeat(3, 232px);
+        grid-template-rows: 168px 116px;
+        /* margin-top: 65px; */
+        margin-bottom: 110px;
+        /* justify-content: center; */
+    }
+
+    .mosaic__item img {
+        width: 232px;
+    }
+
+    .mosaic__item__collapsed img {
+        height: 116px;
+    }
+
+    .central__block__mosaic {
+        margin-top: 73px;
+        margin-bottom: 32px;
+        gap: 16px;
+        /* display: grid; */
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3,581px);
+        /* justify-content: center; */
+    }
 }
